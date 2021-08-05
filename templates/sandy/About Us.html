@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Us</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+background: #CEECF5;
+}
+/* Style the header */
+header {
+  background-color: #0B0B61;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: white;
+  padding: 10px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: white;
+  height: 300px; /* only for demonstration, should be removed */
+}
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the footer */
+footer {
+  background-color:#0B0B61;
+  padding: 0px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>SRAVANTHI HOSPITAL'S</h2>
+  <h3>About Us</h3>
+</header>
+<section>
+<nav></nav>
+  <article>
+
+    <p>Sravanthi Hospital's is a Super Speciality Hospital is a 330-bedded quaternary care hospital with state-of-the-art modern healthcare facilities. Our hospital aims to provides comprehensive, seamless & integrated world class healthcare services.</p>
+    <p>We provide:<ul>
+     <li>330 beds.</li>
+     <li>110 beds exclusively for critical care.</li>
+     <li>Modular operation theaters including dedicated transplant OTs.</li>
+     <li>Biplane Cath labs for complex cardiac and neuro cases.</li>
+     <li>Best Quality Servies provides for patients.</li>
+    <li>Experienced Doctors.</li></ul>
+    </p>
+     <p>Centers Of Excellence:<ul>
+     <li>24*7 Emergency & Trauma.</li>
+     <li>Institute of Gastroenterology- Medical & Surgical.</li>
+     <li>Institute of Critical Care Sciences</li>
+     <li>Institute of Cardiac Sciences.</li>
+    </ul></p>
+
+
+  </article>
+</section>
+
+
+</body>
+</html>

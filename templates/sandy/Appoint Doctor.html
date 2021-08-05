@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Doctor</title>
+</head>
+<style>
+.header{
+  padding: 5px;
+  text-align: center;
+  background: #0B0B61;
+  font-size: 20px;
+  color: white;
+}
+footer {
+  background-color:#0B0B61;
+  padding: 0px;
+  text-align: center;
+  color: white;
+}
+</style>
+<body bgcolor="Purple">
+<div class="header">
+
+<h1><i>Welcome Sravanthi Hospital's</i></h1>
+    <h3><i>Appoint Doctor</i></h3>
+</div>
+<br><br>
+<form action="home" method="POST">
+    {% csrf_token %}
+<b>NAME:</b>
+ <input type="text" name="name" required><br><br> <b>AGE:</b>
+<input type="text" name="age" required> <br><br><b>GENDER:</b>
+<input type="radio" name="gender"> Male
+  <input type="radio" name="gender">Female <input type="radio" name="gender">Others<br><br>
+<b>DOB:</b>
+
+
+  <input type="date" name="date" required><br><br> <b>CONTACT NUMBER:</b>
+  <input type="text" name="contactnumber required"><br><br>
+ <b>ADDRESS:</b>
+<textarea id="address" cols="50" rows="3" required></textarea><br><br>
+<b>EMAIL:</b>
+<input type="text" name="emailid" required ><br><br>
+<b>Time Slots:</b>
+ <select name="slots" id="slots">
+  <option value="6:00am">6:00am</option>
+  <option value="9:00am">9:00am</option>
+  <option value="12:00pm">12:00pm</option>
+  <option value="3:00pm">3:00pm</option>
+  <option value="06:00pm">06:00pm</option>
+</select><br>
+  <button type="submit" class="Appoint Doctor">Done</button>
+</form>
+<footer>
+ <p>A Hospital alone shows what war is!</p>
+</footer>
+</body>
+</html>
